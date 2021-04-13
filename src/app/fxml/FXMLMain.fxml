@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #F7F7E8;" stylesheets="@../css/searchacceptor.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.FXMLMainController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="700.0" prefWidth="1400.0">
+         <left>
+            <VBox prefHeight="700.0" prefWidth="236.0" spacing="5.0" style="-fx-background-color: #763857;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="320.0" prefWidth="224.0" style="-fx-background-color: #35012c;">
+                     <children>
+                        <ImageView fitHeight="173.0" fitWidth="197.0" layoutX="32.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="14.0" layoutY="209.0" prefHeight="53.0" prefWidth="115.0" text="Donor" textFill="#eff0b6">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="13.0" layoutY="256.0" text="Managment System" textFill="#eff0b6">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button fx:id="SearchDonorID" mnemonicParsing="false" onAction="#SearchDonorHandleAction" prefHeight="59.0" prefWidth="236.0" text="Search for Donor" textFill="#eff0b6">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="SearchAcceptorID" mnemonicParsing="false" onAction="#SearchAcceptorHandleAction" prefHeight="60.0" prefWidth="236.0" text="Search for Acceptor" textFill="#eff0b6">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="AddDonorID" mnemonicParsing="false" onAction="#AddDonorHandleAction" prefHeight="61.0" prefWidth="236.0" text="Add Donor" textFill="#eff0b6">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="AddAcceptorID" mnemonicParsing="false" onAction="#AddAcceptorHandleAction" prefHeight="56.0" prefWidth="236.0" text="Add Acceptor" textFill="#eff0b6">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="SettingsID" mnemonicParsing="false" onAction="#SettingsHandleAction" prefHeight="48.0" prefWidth="242.0" text="Settings" textFill="#eff0b6">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="LogOutID" mnemonicParsing="false" onAction="#LogOutHandleAction" prefHeight="56.0" prefWidth="236.0" text="Log Out" textFill="#eff0b6">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

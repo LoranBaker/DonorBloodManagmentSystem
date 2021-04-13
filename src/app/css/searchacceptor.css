@@ -1,0 +1,70 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.button
+{
+    -fx-background-color: #763857;
+}
+.button:hover{
+    -fx-background-color:#763857/*35012c*/;
+    
+}
+.button:pressed{
+    -fx-background-color: #35012c;
+    
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler{
+    -fx-cell-size: 20;
+    -fx-background-color: #763857;
+    
+}
+
+.table-view .column-header .label {
+    
+    -fx-text-fill: #eff0b6;
+    -fx-font-weight:bold;
+    -fx-alignment: CENTER_LEFT;
+    
+}
+
+.table-view .cell{
+    -fx-cell-size: 30;
+    -fx-alignment: center-left;
+    -fx-text-fill: #763857;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.tabel-row-cell:selected{
+    
+    -fx-background-color: #eff0b6/*rgb(127, 172, 243)*/;
+    
+}
+
+.tabel-row-cell:selected-text{
+    -fx-fill: #eff0b6;
+}
+
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: derive(#2D75E8, 80%);
+    -fx-background-radius: 2em;
+    -fx-border-radius: 2em;
+}
+
+.tabel-view .scroll-bar:horizontal .thumb,
+.tabel-view .scroll-bar:vertical .thumb{
+    -fx-background-color: derive(#2D75E8, 80%);
+    -fx-background-radius: 2em;
+    -fx-background-insets: 2, 0, 0;
+}
+
+.mainFxmlClass {
+
+    
+    
+}
+
